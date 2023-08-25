@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Statistics Calculator</title>
+	<link rel="stylesheet" href="index.css">
+  <link rel="icon" href="mathsymbolsnobg.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+  <!--Animation Background Design-->
+  <div class="area">
+    <ul class="circles">
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+    </ul>
+ </div>
+
+  <div class="title">CMPSC 136 Quantitative Methods for Computer Science</div>
+
+  <div class="container">
+    <div class="box" onclick="redirect('DescriptiveStats.html')">Descriptive Statistic Calculator</div>
+    <div class="box" onclick="redirect('ProbabiltyMethods.html')">Probability and Methods of Counting Calculator</div>
+    <div class="box" onclick="redirect('DiscreteRandom.html')">Discrete Random Variables Calculator</div>
+    <div class="box" onclick="redirect('ContinousProbability.html')">Continuous Probability of Distribution Calculator</div>
+    <div class="box" onclick="redirect('SamplingDistribution.html')">Sampling Distribution Calculator</div>
+    <div class="box" onclick="redirect('ConfidenceIntervals.html')">Confidence Intervals Calculator</div>
+    <div class="box" onclick="redirect('HypothesisTesting.html')">Hypothesis Testing Calculator</div>
+  </div>
+
+  <div class="groupnames">
+		<div class="name-box">
+      <p id="name-rotator"></p>
+      <div class="copyright">
+        <p>&copy; 2023 Quantitatve Methods Final Project</p>
+      </div>
+		</div>
+	</div>
+  
+
+    <script src="index.js"></script>
+</body>
+</html>

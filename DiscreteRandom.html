@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Discrete Random Variable</title>
+	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animation.css">
+  <link rel="icon" href="mathsymbolsnobg.png" type="image/png">
+</head>
+<body>
+    <button onclick="window.location.href = 'index.html'">Dashboard</button>
+
+	<div class="container">
+	  <div class="calculator">
+
+        <h2>Discrete Random Variable</h2>
+        <form id="randomVariableForm">
+          <label for="outcomes">Outcomes (comma-separated):</label>
+          <input type="text" id="outcomes" required>
+  
+          <label for="probabilities">Probabilities (comma-separated):</label>
+          <input type="text" id="probabilities" required>
+  
+          <label for="value">Value:</label>
+          <input type="text" id="value" required>
+  
+          <button type="submit" onclick="calculateProbability()">Calculate Probability</button>
+        </form>
+  
+        <div id="result"></div>
+
+        <br><br>
+        <a href="#" class="custom-link" onclick="showPopup()">Check Formula</a>
+    
+
+        <div id="popup" class="popup">
+          <h2>Formula</h2>
+          <h4>Probability:</h4>
+          <p>The formula to calculate the probability of an event depends on the specific situation and the nature of the event. In general, the probability of an event A occurring can be calculated using the formula:</p>
+          <p>Probability of A = Number of favorable outcomes / Total number of possible outcomes</p>
+          <div class="margin"></div> 
+          <button onclick="closePopup()">Close</button>
+          </div>
+        
+       </div>
+    </div>
+
+      <!--Animation Background Design-->
+  <div class="area">
+    <ul class="circles">
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+    </ul>
+ </div>
+    <script src="DiscreteRandom.js"></script>
+</body>
+</html>

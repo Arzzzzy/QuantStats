@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Descriptive Statistic</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="animation.css">
+	<link rel="icon" href="mathsymbolsnobg.png" type="image/png">
+</head>
+<body>
+	<button onclick="window.location.href = 'index.html'">Dashboard</button>
+
+	<div class="container">
+	  <div class="calculator">
+		<h2>Descriptive Statistic</h1>
+		<label>Enter a list of numbers (comma-separated):</label>
+		<label>Example. 12, 9, 45, 56, 23, 45</label>
+		<input type="text" id="numbersInput">
+		<br><br>
+		<button onclick="calculate()">Calculate</button>
+		<div class="result" id="result-mean-median-mode"></div>
+		<br><br>
+		<a href="#" class="custom-link" onclick="showPopup()">Check Formula</a>
+
+		<!-- FORMULA HYPERLINK DITOY -->
+		<br>
+		<div id="popup" class="popup">
+			<h2>Formula</h2>
+			<h4>Mean:</h4>
+			<p>Mean = (Sum of all values) / (Total number of values)</p>
+			<div class="margin"></div> 
+			<h4>Median:</h4>
+			<p>For an odd number of values: Median = Middle value</p>
+			<p>For an even number of values: Median = (Sum of two middle values) / 2</p>
+			<div class="margin"></div> 
+			<h4>Mode:</h4>
+			<p>There is no specific formula for calculating the mode. It is simply the value(s) that occur with the highest frequency in the data set.</p>
+			<div class="margin"></div> 
+			<h4>Range:</h4>
+			<p>Range = highest value - lowest value</p>
+			<div class="margin"></div> 
+			<h4>Variation/standard deviation:</h4>
+			<p>Standard Deviation = sqrt( (sum of (x - mean)^2) / N )</p>
+			<div class="margin"></div> 
+			<h4>Coefficient of variation:</h4>
+			<p>Coefficient of Variation = (Standard Deviation / Mean) * 100</p>
+			<div class="margin"></div> 
+			<h4>Quartiles:</h4>
+			<p>Quartiles = divides the data set into 4 parts</p>
+			<div class="margin"></div> 
+			<h4>Interquartile Range:</h4>
+			<p>Interquartile Range = upper quartile - lower quartile</p>
+			<button onclick="closePopup()">Close</button>
+		</div>
+
+	  </div>
+	</div>
+
+	  <!--Animation Background Design-->
+	  <div class="area">
+		<ul class="circles">
+		   <li></li>
+		   <li></li>
+		   <li></li>
+		   <li></li>
+		   <li></li>
+		   <li></li>
+		   <li></li>
+		   <li></li>
+		   <li></li>
+		   <li></li>
+		</ul>
+	 </div>
+
+	<script src="DescriptiveStats.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Continous Probability</title>
+	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animation.css">
+  <link rel="icon" href="mathsymbolsnobg.png" type="image/png">
+</head>
+<body>
+
+    <button onclick="window.location.href = 'index.html'">Dashboard</button>
+
+	<div class="container">
+	  <div class="calculator">
+        <h2>Continous Probability Distribution</h1>
+
+        <form id="randomVariableForm">
+            <label for="mean">Mean:</label>
+            <input type="number" id="mean" required>
+          
+            <label for="stdDev">Standard Deviation:</label>
+            <input type="number" id="stdDev" required>
+          
+            <label for="value">Value:</label>
+            <input type="number" id="value" required>
+          
+            <button type="submit">Calculate Probability</button>
+          </form>
+          
+          <div id="result"></div>
+
+          <br><br>
+          <a href="#" class="custom-link" onclick="showPopup()">Check Formula</a>
+      
+          <div id="popup" class="popup">
+            <h2>Formula</h2>
+            <h4>Z-score</h4>
+            <p>z-score = (value - mean) / standard deviation</p>
+            <p></p>
+            <div class="margin"></div> 
+            <h4>Probability:</h4>
+            <p>Probability = 0.5 * (1 (z-score / √2))</p>
+            <p></p>
+            <button onclick="closePopup()">Close</button>
+            </div>
+
+        </div>
+      </div>
+
+        <!--Animation Background Design-->
+  <div class="area">
+    <ul class="circles">
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+    </ul>
+ </div>
+
+
+
+
+    <script src="ContinousProbability.js"></script>
+</body>
+</html>

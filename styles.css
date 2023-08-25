@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .calculator {
+    border: 8px solid rgba(255, 0, 0, 0.801);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #d2e3f1;
+  }
+
+  .groupnames {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .name-box {
+    border: 2px solid rgba(255, 0, 0, 0.801);
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff; /* Add a specific background color for the name box */
+  }
+  
+  .margin {
+    margin-top: 5px;
+  }
+
+  .input-container {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  button {
+    background-color: rgba(255, 0, 0, 0.801);
+    color: rgb(255, 255, 255);
+    border: 2px solid #d3d3d3;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #000000;
+  }
+
+  #significanceLevel{
+    border-radius: 8px;
+    border: 2px solid #f80000;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  #confidenceLevel{
+    border-radius: 8px;
+    border: 2px solid #f80000;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  #resultPermutations,
+  #resultCombinations {
+    margin-top: 10px;
+    font-weight: bold;
+  }  
+
+  .result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+
+  input[type="number"], 
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid #ff0000;
+    font-size: 16px;
+  }
+
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d2e3f1;
+    padding: 20px;
+    border: 5px solid #f80000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  a.custom-link{
+    color: blue;
+  }
+  

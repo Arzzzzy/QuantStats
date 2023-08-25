@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sampling Distribution</title>
+	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animation.css">
+  <link rel="icon" href="mathsymbolsnobg.png" type="image/png">
+</head>
+<body>
+
+    <button onclick="window.location.href = 'index.html'">Dashboard</button>
+
+	<div class="container">
+	  <div class="calculator">
+
+        <h2>Confidence Interval Calculator</h2>
+        <form id="confidenceIntervalForm">
+          <label for="mean">Sample Mean:</label>
+          <input type="number" id="mean" required>
+           <br><br>
+          <label for="stdDev">Sample Standard Deviation:</label>
+          <input type="number" id="stdDev" required>
+          <br><br>
+          <label for="sampleSize">Sample Size:</label>
+          <input type="number" id="sampleSize" required>
+          <br><br>
+          <label for="confidenceLevel">Confidence Level:</label>
+          <select id="confidenceLevel" required>
+            <option value="0.90">90%</option>
+            <option value="0.95">95%</option>
+            <option value="0.99">99%</option>
+          </select>
+          <br><br>
+  
+          <button type="submit" onclick="calculateConfidenceInterval()">Calculate Confidence Interval</button>
+        </form>
+  
+        <div id="result"></div>
+
+        <br><br>
+        <a href="#" class="custom-link" onclick="showPopup()">Check Formula</a>
+    
+        <div id="popup" class="popup">
+          <h2>Formula</h2>
+          <h4>Margin of Error:</h4>
+          <p>Margin of error = confidence level * sample standard deviation / √sample size</p>
+          <div class="margin"></div> 
+          <h4>Lower Bound:</h4>
+          <p>lower bound = sample mean - margin of error</p>
+          <div class="margin"></div> 
+          <h4>Upper Bound:</h4>
+          <p> upper bound = sample mean + margin of error</p>
+
+          <button onclick="closePopup()">Close</button>
+          </div>
+
+        </div>
+      </div>
+
+        <!--Animation Background Design-->
+  <div class="area">
+    <ul class="circles">
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+    </ul>
+ </div>
+
+
+    <script src="ConfidenceIntervals.js"></script>
+</body>
+</html>
