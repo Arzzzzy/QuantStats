@@ -8,7 +8,8 @@ Input Data: For each calculator, enter the relevant data in the provided input f
 Click on the Box: Simply click on the desired calculator box, and the result will be displayed instantly.
 
 Interactive Dashboard: The dashboard is designed to be interactive and responsive. Feel free to experiment with different datasets and explore various statistical measures effortlessly.
-## TECHNOLOGIES USED: 
+## TECHNOLOGIES USED
+
 HTML, CSS, and JavaScript: The frontend of the web application is built using these core web technologies, ensuring a smooth and user-friendly interface. Bootstrap: The application is styled using Bootstrap, making it responsive and visually appealing on different devices.
 
 ## INSTALLATION: To use the Statistics Calculator Dashboard, simply open the website in your web browser by navigating to the provided URL website-link. There's no need for any installation or setup, and you can access the calculators instantly.
